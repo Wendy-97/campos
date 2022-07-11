@@ -1,8 +1,145 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <title>Hello world</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wendy Campos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/portafolio.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
-    <h1> Hola</h1>
-    </body
-    </html> 
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="./img/WendyPerfil.jpeg"
+            alt="Programador"
+          />
+          <div>
+            Wendy Campos<br />
+            Desarrollo Web
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="./img/hamburger-icon.svg" alt=" abrir menu" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="./img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#perfil" class="selected">Perfil</a></li>
+          <li><a href="#habilidad">Habilidades</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+
+          <!--- <li><a href="#contact">Contactame</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="perfil">
+        <div class="profile-info">
+          <h1 class="profile-title">
+            Hola, Soy, <br />
+            Wendy Campos
+          </h1>
+          <p class="profile-details">
+            Durante mi carrera profesional he desarrollado proyectos de sitios
+            web con diseño responsivo en diversos lenguajes de programación y en
+            herramientas como WordPress a través del maquetador Divi Theme.
+          </p>
+          <form
+            method="get"
+            action="https://drive.google.com/file/d/1QTInENSp18exQYxbyBIUD9cvS5BdzClX/view?usp=sharing"
+          >
+            <button class="profile-btn">Descargar CV</button>
+          </form>
+        </div>
+        <span class="profile-img-section">
+          <img
+            src="./img/WendyPerfil.jpeg"
+            alt="Desarrolladora"
+            class="profile-img"
+          />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="habilidad">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">Bootstrap</li>
+          <li class="skills-skill">WordPress</li>
+          <li class="skills-skill">JavaScript</li>
+          <li class="skills-skill">PHP</li>
+        </ul>
+      </section>
+    </div>
+    <section class="portafolio" id="portafolio">
+      <img src="img/wave.svg" alt="división" class="wave wave" />
+      <!--CLASE PADRE-->
+      <div class="portafolio-body" align="center">
+        <!--Container-->
+        <h2 class="portafolio-title">Portafolio Web</h2>
+        <!--CLASE HIJO-->
+        <div class="portafolio_imagen">
+          <img src="./img/Portafoliomenu.png" alt="web" />
+        </div>
+        <!--CLASE HIJO-->
+        <div class="portafolio_imagen">
+          <img src="./img/Portafolio_fre.jpg" alt="web2" />
+        </div>
+        <!--CLASE HIJO-->
+        <div class="portafolio_imagen">
+          <img src="./img/Resumen CV Design.png" alt="web2" />
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <!--CODIGO DE EJEMPLO PARA GALERIA
+    <div class="galeria">
+      <!--CLASE PADRE 
+      <h1>Galeria</h1>
+      <div class="imagen">
+        <!--CLASE HIJO-
+        <img src="./img/Portafoliomenu.png" alt="" />
+      </div>
+
+      <div class="imagen">
+        <img src="./img/Resumen CV Design.png" alt="" />
+      </div>
+
+      <div class="imagen">
+        <img src="./img/Portafolio_fre.jpg" alt="" />
+      </div>
+    </div>
+
+  -->
+
+    <footer>Desarrollo Web | Wendy Campos Rivero</footer>
+  </body>
+</html>
